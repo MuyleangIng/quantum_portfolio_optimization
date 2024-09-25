@@ -1,0 +1,12 @@
+version: '3'
+services:
+  kak-db:   
+    image: postgres:14     # Use the appropriate version of Postgres
+    restart: always  
+    container_name: kak-db  # Your container name
+    ports:
+      - "5432:5432"         # Change only the exposed port as needed
+    environment:
+      POSTGRES_USER: your_username    # For username to connect to the DB
+      POSTGRES_PASSWORD: your_password # For password login to the DB
+      POSTGRES_DB: quantum_portfolio   # DB name, follow your own

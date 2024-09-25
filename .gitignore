@@ -1,0 +1,8 @@
+venv/
+*.pyc
+__pycache__/
+*.db
+
+# Ignore the output directory
+output/
+large_stock_data.csv
